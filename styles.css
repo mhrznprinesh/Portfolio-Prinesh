@@ -1,0 +1,229 @@
+body {
+  font-family: 'Cambria', serif;
+  background-color: #E6E6FA;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  text-align: center;
+  padding: 5em 0 2em; /* Adjusted padding to push header content down */
+  background: #4B0082;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo img {
+  width: 80px; /* Adjust size as needed */
+  height: auto;
+  margin-right: 1em;
+}
+
+.title {
+  text-align: left;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+.profile-img img {
+  width: 120px; /* Adjust size as needed */
+  height: auto;
+  border-radius: 50%;
+  margin-top: 1em;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  text-align: center;
+  padding: 1em 0;
+  background: #ffffff; /* Change background color to white */
+  color: #4B0082; /* Change text color to purple */
+  width: 100%; /* Ensure nav covers entire screen width */
+  position: fixed; /* Fix the nav to the top */
+  top: 0;
+  left: 0;
+  z-index: 1000; /* Ensure nav is above other content */
+}
+
+nav a {
+  color: #4B0082; /* Change link color to purple */
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.2em;
+  padding: 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+  background-color: #4B0082;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+main {
+  padding-top: 100px; /* Adjust padding to push content down below fixed nav */
+}
+
+section {
+  padding: 3em 2em;
+  background: #f9f9f9;
+  margin: 2em 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section h2 {
+  border-bottom: 2px solid #4B0082;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  color: #4B0082;
+}
+
+.content p {
+  line-height: 1.8;
+  margin-bottom: 1.5em;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #4B0082;
+  color: #ffffff;
+  border-top: 2px solid #B2B2FF;
+}
+
+@media (max-width: 768px) {
+  nav {
+      display: flex;
+      flex-direction: column;
+  }
+  nav a {
+      margin: 10px 0;
+  }
+  .content {
+      width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 2em;
+  }
+  nav a {
+      font-size: 1em;
+  }
+  section {
+      padding: 1em;
+  }
+  .content {
+      width: 95%;
+  }
+  .profile-img img {
+      width: 100px;
+  }
+}
+.project h3 {
+  font-size: 1.3em; /* Adjust font size as needed */
+  color: #4B0082; /* Adjust color as desired */
+  margin-bottom: 0.5em; /* Adjust spacing */
+}
+
+.project-description {
+  text-indent: 2em; /* Adjust the indentation as needed */
+  margin-bottom: 0em; /* Adjust margin bottom to create spacing between paragraphs */
+}
+
+.project-description br {
+  display: block; /* Ensure line breaks are treated as block elements */
+  margin-top: 0.5em; /* Adjust top margin of line breaks */
+}
+
+.project-description1 {
+  text-indent: 3em; /* Adjust the indentation as needed */
+  margin-bottom: 0.5em; /* Adjust margin bottom to create spacing between paragraphs */
+}
+
+.project-description1 br {
+  display: block; /* Ensure line breaks are treated as block elements */
+  margin-top: 0.5em; /* Adjust top margin of line breaks */
+}
+
+
+.about-me {
+  display: flex;
+  flex-wrap: wrap; /* Allow flex items to wrap */
+  justify-content: space-between; /* Align items to opposite ends */
+  align-items: center; /* Center items vertically */
+}
+
+.about-me-text {
+  flex: 1; /* Allow text to take remaining space */
+}
+
+.about-me-photo {
+  flex: 0 0 18%; /* Fixed width for the photo */
+  
+}
+
+.about-me-photo img {
+  max-width: 90%; /* Ensure photo doesn't exceed container width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 30%; /* Optional: Round the corners if it's a circular photo */
+
+}
+
+.contact-link {
+  display: inline-block;
+  padding: 10px 0; /* Adjust padding as needed */
+  color: #4B0082; /* Original text color */
+  text-decoration: none;
+  position: relative; /* Required for absolute positioning of pseudo-element */
+}
+
+.contact-link::after {
+  content: '\00bb'; /* Unicode for right-pointing arrow */
+  display: inline-block;
+  margin-left: 5px; /* Space between text and arrow */
+  opacity: 0; /* Initially invisible */
+  position: absolute;
+  left: 100%; /* Position relative to parent */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.contact-link:hover::after {
+  opacity: 1; /* Make arrow visible on hover */
+  transform: translateX(5px); /* Slide arrow in from left */
+  color: #4B0082; /* Text color on hover */
+}
+
+@keyframes slideIn {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(5px);
+  }
+}
+
+
+

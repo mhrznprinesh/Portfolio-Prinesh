@@ -227,3 +227,28 @@ footer {
 
 
 
+/*for photo/gallery dynamic*/
+#photo-gallery {
+  padding: 2em 0;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-container img {
+  width: 200px; /* Adjust size as needed */
+  height: auto;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}

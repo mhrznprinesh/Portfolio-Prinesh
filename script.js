@@ -8,3 +8,23 @@ document.querySelectorAll('nav a').forEach(anchor => {
       });
   });
 });
+
+
+//for photo dynamic
+document.addEventListener("DOMContentLoaded", function() {
+  const galleryContainer = document.querySelector('.gallery-container');
+  const imageFolder = 'img/Gallery/Project Butwal/'; // Path to your images folder
+  const imageNames = [
+      'photo1.jpg',
+      'photo2.jpg',
+      'photo3.jpg',
+      // Add more file names as needed
+  ];
+
+  imageNames.forEach(function(imageName) {
+      const imgElement = document.createElement('img');
+      imgElement.src = imageFolder + imageName;
+      imgElement.alt = imageName.split('.')[0]; // Set alt text based on file name
+      galleryContainer.appendChild(imgElement);
+  });
+});

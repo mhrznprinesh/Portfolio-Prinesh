@@ -144,7 +144,7 @@ footer {
   }
 }
 .project h3 {
-  font-size: 1.3em; /* Adjust font size as needed */
+  font-size: 1.0em; /* Adjust font size as needed */
   color: #4B0082; /* Adjust color as desired */
   margin-bottom: 0.5em; /* Adjust spacing */
 }
@@ -235,13 +235,13 @@ footer {
   text-align: center;
 }
 
-.gallery-container {
+.gallery-container1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.gallery-container img {
+.gallery-container1 img {
   width: 200px; /* Adjust size as needed */
   height: auto;
   margin: 10px;
@@ -250,6 +250,6 @@ footer {
   transition: transform 0.3s ease;
 }
 
-.gallery-container img:hover {
+.gallery-container1 img:hover {
   transform: scale(1.1); /* Slight zoom effect on hover */
 }

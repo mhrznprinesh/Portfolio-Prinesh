@@ -12,7 +12,7 @@ document.querySelectorAll('nav a').forEach(anchor => {
 
 //for photo dynamic
 document.addEventListener("DOMContentLoaded", function() {
-  const galleryContainer = document.querySelector('.gallery-container');
+  const galleryContainer = document.querySelector('.gallery-container1');
   const imageFolder = 'img/Gallery/Project Butwal/'; // Path to your images folder
   const imageNames = [
       'photo1.jpg',
